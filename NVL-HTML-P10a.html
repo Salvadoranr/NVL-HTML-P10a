@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>NVL-HTML-P10a</title>
+</head>
+<body>
+    <form method="post" action="miservidor.php">
+        <div>
+          <label for="postCode">Codigo postal:</label>
+          <input id="postCode" type="number">
+        </div>
+        <div>
+            <label for="satisfaccion">Nivel de satisfacción con el producto:</label>
+            <select id="satisfaccion">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="text">
+        </div>
+        <div>
+            <label for="comentarioPositivo">Comentario Positivos del producto:</label>
+            <textarea id="comentarioPositivo"></textarea>
+          </div>
+          <div>
+            <label for="comentarioNegativos">Comentario Negativos del producto:</label>
+            <textarea id="comentarioNegativos"></textarea>
+          </div>
+        
+        
+       
+      <div>
+          <label for="votacion">Como votarias al producto:</label>
+          <input name="votacion" type="radio" value="4">excelente
+          <input name="votacion" type="radio" value="3">bueno
+          <input name="votacion" type="radio" value="2">regular
+          <input name="votacion" type="radio" value="1">pésimo
+      </div>
+      <div>
+          <label for="votacion">Como votarias al producto:</label>
+          
+          <select id="votacion">
+            <option value="4">excelente</option>
+            <option value="3">bueno</option>
+            <option value="2">regular</option>
+            <option value="1">pésimo</option>
+            
+          </select>
+          <label >(Otra forma de votar el producto)</label>
+      </div>
+      
+      <input type="submit" value="Enviar"> 
+    </form>
+</body>
+</html>
